@@ -6,7 +6,7 @@ This is a python project that includes de-identification and synthesis of educat
 ### Overview
 - Statistical Analysis: generate meta file for the dataset
 - dAFM: deep Additive Factors Model to learn the performance of students on certain problems
-- modeler: Learn and de-identify the original dataset
+- modeler(sdv): Learn and de-identify the original dataset
 - sampler: Create synthetic data
 
 ### Installation
@@ -26,8 +26,11 @@ This project depends on the following requirements:
 ```
 git clone https://github.com/dongyanl/Summer2018-Generating-Synthetic-Data-from-Deidentified-Data
 ```
-
-2) Execute the ```sampler.py``` script using python after specifying the input values. It will summarize and de-identify the original dataset and create the synthetic dataset. The example dataset is already included in the datasets folder.
+2) Enter into src directory using following command.
+```
+cd src
+```
+3) Execute the ```sampler.py``` script using python after specifying the input values. It will summarize and de-identify the original dataset and create the synthetic dataset. The example dataset is already included in the datasets folder.
 **Note:** The detailed description of the input values is mentioned in later section.
 ```
 python3 sampler.py --dataset_path Example/example.txt --num_of_stu 5
