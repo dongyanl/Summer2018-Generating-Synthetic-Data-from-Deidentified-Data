@@ -43,11 +43,45 @@ value| dataset_path | default: Example/example.txt
 **num_of_stu**| required | number of student-problem generated in synthetic data
 value| n | default: 2
 
-
 ### Output Files
+
+**Description**
 
 File Name | Description
 :----------------- | :--------
 **report.json** | meta file that summarize the original data
 **synthetic.csv** | synthetic data
 
+
+**Preview**
+
+report.json
+```
+{
+    "students": [
+        {
+            "fields": [
+                {
+                    "datatype": "int64",
+                    "max": 228,
+                    "mean": 114.5,
+                    "min": 1,
+                    "name": "Row",
+                    "num of unique values": 228,
+                    "std": 65.96211033616193
+                },
+                {
+                    "datatype": "object",
+                    "max length": 8,
+                    "min length": 8,
+                    "name": "Sample Name",
+                    "num of unique values": 1,
+                    "overlap characters": "All Data",
+                    "total num of values": 228
+                },
+         ...
+        }
+        ...
+}
+```
+          
